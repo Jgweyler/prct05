@@ -32,8 +32,8 @@ class Fraccion
 	
 	def resta(numerador, denominador)
 		mcm= ((@b * denominador)/ gcd(@b, denominador))	#mcm(a,b)= (a*b)/ mcd(a,b)
-		@a= mcm/@b * @a 
-		numeradorAux= mcm/denominador * numerador
+		numeradorAux= mcm/@b * @a 
+		numerador= mcm/denominador * numerador
 		restaA= numeradorAux - numerador
 		restaB=mcm
 		
