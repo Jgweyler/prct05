@@ -18,3 +18,5 @@
 
 
 	
+Nota: En las implementaciones he comentado el puts del método gcd puesto que no quería que
+se mostrara el resultado de la operación por pantalla cada vez que lo llamara.
