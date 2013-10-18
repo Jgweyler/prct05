@@ -1,0 +1,20 @@
+
+2) En esta tarea escriba la respuesta a las siguientes preguntas:
+   2.1.) ¿Cuál es el error en el código del método para calcular el máximo común divisor?
+
+	El error está en que nunca entra al bucle while a no ser que v sea 0. Esto supone que el valor del 
+	máximo común divisor no se calcule correctamente. Concretamente el error se encuentra en la línea 3
+	del archivo gcd.rb -->  while v == 0. Para solventar el problema rescribiremos dicha línea por
+	 --> while v != 0. De esta manera se devolverá el valor correcto del máximo común divisor.
+
+   2.2.) ¿Qué comandos del depurador utilizó para detectarlo? Describa la sesión de depuración.
+
+	Inicié el depurador sobre el fichero gcd.rb con el comando facilitado en README.md 
+	(ruby -rdebug gcd.rb). Realicé los comandos listados a continuación en el fichero.
+	Gracias a eso establecemos una parada en la línea 4. No obstante para asegurarme
+	utilicé otro comando facilitado por el comando 'help'. Usé el comando 'step' para
+	poder iterar en cada momento lo que hace el programa, observando que siempre 
+	devolvía el valor de 'u' debido al error cometido al definir el bucle while.
+
+
+	
